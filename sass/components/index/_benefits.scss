@@ -1,0 +1,46 @@
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.benefits__item {
+  display: block;
+  width: calc((100% - 90px) / 4);
+
+  margin: 0;
+}
+
+.benefits__item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.benefits__link {
+  width: 270px;
+  height: 120px;
+  background-color: var(--background-section-two);
+  border-radius: 4px;
+
+  margin-bottom: 30px;
+}
+
+.benefits__link--flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefits__tagline {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--headers-text-color);
+
+  margin-bottom: 10px;
+}
+
+.benefits__features {
+  line-height: 1.71;
+  color: var(--primary-text-color);
+}

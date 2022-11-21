@@ -313,3 +313,7 @@
 .form-checkbox {
   margin-bottom: 30px;
 }
+
+.modal__send-button {
+  @extend .btn;
+}

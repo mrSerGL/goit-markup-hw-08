@@ -1,70 +1,84 @@
 :root {
+  /* ===== fonts ===== */
+  --first-font: 'Roboto', sans-serif;
+  --second-font: 'Raleway', sans-serif;
 
-    /* ===== fonts ===== */
-    --first-font: 'Roboto', sans-serif;
-    --second-font: 'Raleway', sans-serif;
+  /* ===== fonts color ===== */
 
-    /* ===== fonts color ===== */
+  --primary-text-color: #757575;
+  --accent-text-color: #2196f3;
 
-    --primary-text-color: #757575;
-    --accent-text-color: #2196f3;
+  --headers-text-color: #212121;
 
-    --headers-text-color: #212121;
+  --button-text-color-one: #fff;
 
-    --button-text-color-one: #fff;
+  --mission-label-text: #fff;
 
-    --mission-label-text: #fff;
+  --footer-titles-color: #fff;
 
-    --footer-titles-color: #fff;
+  --portfolio-overlay-text-color: #fff;
 
-    --portfolio-overlay-text-color: #fff;
+  /* ===== BG colors ===== */
 
-    /* ===== BG colors ===== */
+  --background-body: #fff;
+  --background-section-one: #fff;
+  --background-section-two: #f5f4fa;
+  --background-color-hero: #c4c4c4;
+  --background-footer: #2f303a;
 
-    --background-body: #fff;
-    --background-section-one: #fff;
-    --background-section-two: #f5f4fa;
-    --background-color-hero: #c4c4c4;
-    --background-footer: #2f303a;
+  --background-hero-modal: #ffffff;
 
-    --background-hero-modal: #ffffff;
+  //   -------------- fonts color ----------------
 
-    /* ===== hero & footer button colors ===== */
+  $colors: (
+    'primary': #757575,
+    'accent': #2196f3,
+    'headers': #212121,
+    'other': #fff,
+  );
 
-    --button-background-color: #2196f3;
-    --button-hover-color: #188ce8;
-    --button-active-color: #188ce8;
+  @function getColor($key) {
+    @return map-get($colors, $key);
+  }
 
-    --modal-close-btn-color: #ffffff;
+  //   .button {
+  //   color: getColor('headers');
+  // }
 
-    /* ===== logo color ===== */
+  /* ===== hero & footer button colors ===== */
 
-    --logo-color-one: #2196f3;
-    --logo-color-two: #000000;
-    --logo-color-three: #fff;
+  --button-background-color: #2196f3;
+  --button-hover-color: #188ce8;
+  --button-active-color: #188ce8;
 
-    /* ===== hero gradient colors ===== */
+  --modal-close-btn-color: #ffffff;
 
-    --hero-gradient-color-one: rgba(47, 48, 58, 0.4);
-    --hero-gradient-color-two: rgba(47, 48, 58, 0.4);
+  /* ===== logo color ===== */
 
-    /* ===== fil svg icons color ===== */
+  --logo-color-one: #2196f3;
+  --logo-color-two: #000000;
+  --logo-color-three: #fff;
 
-    --fill-svg-icons: #afb1b8;
-    --fill-footer-socials: #fff;
+  /* ===== hero gradient colors ===== */
 
-    /* ===== transition propertys ===== */
+  --hero-gradient-color-one: rgba(47, 48, 58, 0.4);
+  --hero-gradient-color-two: rgba(47, 48, 58, 0.4);
 
-    --time-transition: 250ms;
-    --function-transition: cubic-bezier(0.4, 0, 0.2, 1);
-    --delay-transition: 100ms;
+  /* ===== fil svg icons color ===== */
 
-    --transition-standart: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --fill-svg-icons: #afb1b8;
+  --fill-footer-socials: #fff;
 
-    /* ===== other ===== */
+  /* ===== transition propertys ===== */
 
-    --zindex-header: 500;
-    --zind-hero-modal: 1000;
+  --time-transition: 250ms;
+  --function-transition: cubic-bezier(0.4, 0, 0.2, 1);
+  --delay-transition: 100ms;
+
+  --transition-standart: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ===== other ===== */
+
+  --zindex-header: 500;
+  --zind-hero-modal: 1000;
 }
-
- 

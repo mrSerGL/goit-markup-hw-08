@@ -143,7 +143,7 @@ body {
   background-color: var(--background-body);
 }
 
-.btn {
+.btn, .modal__send-button, .hero__button, .footer-button-subscribe {
   font-family: inherit;
   cursor: pointer;
   border: none;
@@ -166,10 +166,10 @@ body {
   -webkit-transition-timing-function: var(--function-transition);
           transition-timing-function: var(--function-transition);
 }
-.btn:hover, .btn:focus {
+.btn:hover, .modal__send-button:hover, .hero__button:hover, .footer-button-subscribe:hover, .btn:focus, .modal__send-button:focus, .hero__button:focus, .footer-button-subscribe:focus {
   background-color: var(--button-hover-color);
 }
-.btn:active {
+.btn:active, .modal__send-button:active, .hero__button:active, .footer-button-subscribe:active {
   background-color: var(--button-active-color);
 }
 

@@ -4,6 +4,12 @@
   align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .contacts__list {
+    display: none;
+  }
+}
+
 .contacts__list .contacts__item:not(:last-child) {
   margin-right: 50px;
 }

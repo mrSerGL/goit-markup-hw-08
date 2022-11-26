@@ -28,23 +28,6 @@
 
   --background-hero-modal: #ffffff;
 
-  //   -------------- fonts color ----------------
-
-  $colors: (
-    'primary': #757575,
-    'accent': #2196f3,
-    'headers': #212121,
-    'other': #fff,
-  );
-
-  @function getColor($key) {
-    @return map-get($colors, $key);
-  }
-
-  //   .button {
-  //   color: getColor('headers');
-  // }
-
   /* ===== hero & footer button colors ===== */
 
   --button-background-color: #2196f3;
@@ -82,3 +65,9 @@
   --zindex-header: 500;
   --zind-hero-modal: 1000;
 }
+
+// ==== BreakPoints =====
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;

@@ -102,13 +102,23 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 2px solid green;
-  outline-offset: -2 px; */
+  outline: 2px solid green;
+  outline-offset: -2 px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 /* === ANIMATION FOOTER inpit === */
@@ -201,15 +211,25 @@ body {
 }
 
 .logo {
+  display: block;
   font-family: "Raleway", cursive;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   text-decoration: none;
   margin-right: 94px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
 .logo__text-one {
   color: var(--logo-color-one);
 }
@@ -218,6 +238,11 @@ body {
   color: var(--logo-color-two);
 }
 
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -282,6 +307,11 @@ body {
           align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .contacts__list {
+    display: none;
+  }
+}
 .contacts__list .contacts__item:not(:last-child) {
   margin-right: 50px;
 }

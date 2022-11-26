@@ -1,13 +1,16 @@
 .benefits {
-  display: flex;
-  flex-wrap: wrap;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .benefits__item {
   display: block;
-  width: calc((100% - 90px) / 4);
+  // width: calc((100% - 90px) / 4);
+  width: 100%;
 
-  margin: 0;
+  // margin: 0;
 }
 
 .benefits__item:not(:nth-child(4n)) {

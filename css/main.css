@@ -249,10 +249,13 @@ body {
     display: none;
   }
 }
-.nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+
+@media screen and (min-width: 768px) {
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .nav__list .nav__item:not(:last-child) {
@@ -264,9 +267,6 @@ body {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: var(--headers-text-color);
   -webkit-transition-property: color;
   transition-property: color;
@@ -275,8 +275,29 @@ body {
   -webkit-transition-timing-function: var(--function-transition);
           transition-timing-function: var(--function-transition);
 }
+@media screen and (max-width: 768px) {
+  .nav__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+}
 .nav__link.current::after, .nav__link:hover::after, .nav__link:focus::after {
   opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  .nav__link.current::after, .nav__link:hover::after, .nav__link:focus::after {
+    opacity: 0;
+  }
 }
 .nav__link.current {
   color: var(--accent-text-color);
@@ -304,20 +325,33 @@ body {
 }
 
 .contacts__list {
+  margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-
 @media screen and (max-width: 768px) {
   .contacts__list {
     display: none;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .contacts__list .contacts__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -329,11 +363,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   text-decoration: none;
@@ -347,10 +383,23 @@ body {
 .contacts__link:hover, .contacts__link:focus {
   color: var(--accent-text-color);
 }
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
 
 .contacts__icon {
   fill: currentColor;
   margin-right: 10px;
+}
+@media screen and (max-width: 1200px) {
+  .contacts__icon {
+    display: block;
+    width: 14px;
+    height: 10px;
+  }
 }
 
 .footer {
@@ -389,10 +438,32 @@ body {
   color: var(--accent-text-color);
 }
 
-.address__email,
+@media screen and (max-width: 768px) {
+  .address__tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .address__email {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .address__email,
 .address__tel {
-  line-height: 1.71;
-  color: rgba(255, 255, 255, 0.6);
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .footer__address .address__item:not(:last-child) {
@@ -1214,6 +1285,7 @@ body {
   border: none;
   border-radius: 50%;
   outline: none;
+  margin-left: auto;
 }
 
 @media (min-width: 768px) {
@@ -1233,7 +1305,7 @@ body {
   width: 100vw;
   height: 100vh;
   padding: 32px;
-  background-color: #3f51b5;
+  background-color: var(--background-body);
   z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -1266,10 +1338,6 @@ body {
   padding: 10px;
   color: #fff;
   text-decoration: none;
-}
-
-.menu-toggle {
-  margin-left: auto;
 }
 
 .filter__list {

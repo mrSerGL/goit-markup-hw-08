@@ -36,26 +36,26 @@
   }
 }
 
-.address__tel {
-  @media screen and (max-width: 768px) {
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    color: #2196f3;
-  }
-}
+// .address__tel {
+//   @media screen and (max-width: 768px) {
+//     font-weight: 500;
+//     font-size: 34px;
+//     line-height: 1.17;
+//     letter-spacing: 0.02em;
+//     color: #2196f3;
+//   }
+// }
 
-.address__email {
-  @media screen and (max-width: 768px) {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: 0.02em;
+// .address__email {
+//   @media screen and (max-width: 768px) {
+//     font-weight: 500;
+//     font-size: 24px;
+//     line-height: 28px;
+//     letter-spacing: 0.02em;
 
-    color: #757575;
-  }
-}
+//     color: #757575;
+//   }
+// }
 
 .address__email,
 .address__tel {

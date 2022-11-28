@@ -98,6 +98,10 @@
   }
 }
 
+.menu-address {
+  margin-bottom: 64px;
+}
+
 .menu-socnetworks {
   display: flex;
 }
@@ -109,4 +113,38 @@
   letter-spacing: 0.02em;
 
   color: #2196f3;
+}
+
+.menu-socnetworks__line {
+  width: 22px;
+  height: 0px;
+  left: 135px;
+  top: 726px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.menu-address__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu-address__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.menu-address__email {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+
+  color: #757575;
 }

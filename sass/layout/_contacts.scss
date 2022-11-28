@@ -1,9 +1,6 @@
 .contacts__list {
   margin-left: auto;
 
-  display: flex;
-  flex-direction: column;
-
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -14,14 +11,16 @@
   // }
 
   @media screen and (min-width: 1200px) {
-    flex-direction: row;
+    display: flex;
     margin-left: auto;
     align-items: center;
   }
 }
 
-.contacts__list .contacts__item:not(:last-child) {
-  margin-right: 50px;
+.contacts__item:not(:last-child) {
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
 }
 
 .contacts__link {

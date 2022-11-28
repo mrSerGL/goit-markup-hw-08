@@ -113,6 +113,15 @@
   letter-spacing: 0.02em;
 
   color: #2196f3;
+
+  &:hover,
+  &:focus {
+    color: #757575;
+
+    transition-property: color;
+    transition-duration: var(--time-transition);
+    transition-timing-function: var(--function-transition);
+  }
 }
 
 .menu-socnetworks__line {
@@ -138,6 +147,11 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #2196f3;
+
+  &:hover,
+  &:focus {
+    color: #757575;
+  }
 }
 
 .menu-address__email {
@@ -147,4 +161,16 @@
   letter-spacing: 0.02em;
 
   color: #757575;
+
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+}
+
+.menu-address__email,
+.menu-address__tel {
+  transition-property: color;
+  transition-duration: var(--time-transition);
+  transition-timing-function: var(--function-transition);
 }

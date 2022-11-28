@@ -1364,6 +1364,15 @@ body {
   letter-spacing: 0.02em;
   color: #2196f3;
 }
+.menu-socnetworks__link:hover, .menu-socnetworks__link:focus {
+  color: #757575;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: var(--time-transition);
+          transition-duration: var(--time-transition);
+  -webkit-transition-timing-function: var(--function-transition);
+          transition-timing-function: var(--function-transition);
+}
 
 .menu-socnetworks__line {
   width: 22px;
@@ -1388,6 +1397,9 @@ body {
   letter-spacing: 0.02em;
   color: #2196f3;
 }
+.menu-address__tel:hover, .menu-address__tel:focus {
+  color: #757575;
+}
 
 .menu-address__email {
   font-weight: 500;
@@ -1395,6 +1407,19 @@ body {
   line-height: 28px;
   letter-spacing: 0.02em;
   color: #757575;
+}
+.menu-address__email:hover, .menu-address__email:focus {
+  color: #2196f3;
+}
+
+.menu-address__email,
+.menu-address__tel {
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: var(--time-transition);
+          transition-duration: var(--time-transition);
+  -webkit-transition-timing-function: var(--function-transition);
+          transition-timing-function: var(--function-transition);
 }
 
 .filter__list {

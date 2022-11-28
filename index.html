@@ -1,93 +1,97 @@
 <!DOCTYPE html>
 <html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
 
-  <title>Web Studio</title>
+    <!-- Fonts -->
 
-  <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet" />
+    <!-- Normalize -->
 
-  <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom styles -->
 
-  <!-- Custom styles -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+  </head>
 
-  <link rel="stylesheet" href="./css/main.min.css" />
-  <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-</head>
+  <body>
+    <!-- ============== HEADER SECTION =================== -->
 
-<body>
-  <!-- ============== HEADER SECTION =================== -->
+    <header class="header">
+      <div class="header--flex container">
+        <a class="logo link" href="./index.html">
+          <span class="logo__text-one">Web</span><span class="logo__text-two">Studio</span></a
+        >
 
-  <header class="header">
-    <div class="header--flex container">
-      <a class="logo link" href="./index.html">
-        <span class="logo__text-one">Web</span><span class="logo__text-two">Studio</span></a>
+        <!-- ===== nav menu ===== -->
 
-      <!-- ===== nav menu ===== -->
+        <nav class="nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link link current" href="./index.html">Студія</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="nav__item"><a class="nav__link link" href="">Контакти</a></li>
+          </ul>
+        </nav>
 
-      <nav class="nav">
-        <ul class="nav__list list">
-          <li class="nav__item">
-            <a class="nav__link link current" href="./index.html">Студія</a>
+        <!-- ===== header__contacts ===== -->
+
+        <ul class="contacts__list list">
+          <li class="contacts__item link">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+              <span>info@devstudio.com</span>
+            </a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link link" href="./portfolio.html">Портфоліо</a>
+          <li class="contacts__item link">
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              <span> +38 096 111 11 11</span>
+            </a>
           </li>
-          <li class="nav__item"><a class="nav__link link" href="">Контакти</a></li>
         </ul>
-      </nav>
 
-      <!-- ===== header__contacts ===== -->
+        <!-- ===== mobile menu button -->
 
-      <ul class="contacts__list list">
-        <li class="contacts__item link">
-          <a class="contacts__link" href="mailto:info@devstudio.com">
-            <svg class="contacts__icon" width="16" height="12">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
-            <span>info@devstudio.com</span>
-          </a>
-        </li>
-        <li class="contacts__item link">
-          <a class="contacts__link" href="tel:+380961111111">
-            <svg class="contacts__icon" width="10" height="16">
-              <use href="./images/icons.svg#icon-smartphone"></use>
-            </svg>
-            <span> +38 096 111 11 11</span>
-          </a>
-        </li>
-      </ul>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="" width="40" height="40">
+            <use href="./images/icons.svg#menu_40px"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
 
-      <!-- ===== mobile menu button -->
+    <!-- ================ MAIN =============== -->
 
-      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"></path>
-        </svg>
-      </button>
-    </div>
-  </header>
+    <main class="main">
+      <!-- ===== hero section ===== -->
 
-  <!-- ================ MAIN =============== -->
-
-  <main class="main">
-    <!-- ===== hero section ===== -->
-
-    <!-- <section class="hero hero--overlay">
+      <!-- <section class="hero hero--overlay">
         <div class="hero__container container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
 
@@ -95,71 +99,71 @@
         </div>
       </section> -->
 
-    <!-- ===== benefits section ===== -->
+      <!-- ===== benefits section ===== -->
 
-    <section class="benefits-section section">
-      <div class="container">
-        <h2 class="visually-hidden">Наші переваги</h2>
+      <section class="benefits-section section">
+        <div class="container">
+          <h2 class="visually-hidden">Наші переваги</h2>
 
-        <ul class="benefits list">
-          <li class="benefits__item link">
-            <a class="benefits__link benefits__link--flex" href="">
-              <svg class="benefits__img" width="70" height="70">
-                <use href="./images/icons.svg#icon-antenna"></use>
-              </svg>
-            </a>
+          <ul class="benefits list">
+            <li class="benefits__item link">
+              <a class="benefits__link benefits__link--flex" href="">
+                <svg class="benefits__img" width="70" height="70">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
+              </a>
 
-            <h3 class="benefits__tagline">увага до деталей</h3>
-            <p class="benefits__features">
-              Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-            </p>
-          </li>
+              <h3 class="benefits__tagline">увага до деталей</h3>
+              <p class="benefits__features">
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+              </p>
+            </li>
 
-          <li class="benefits__item link">
-            <a class="benefits__link benefits__link--flex" href="">
-              <svg class="benefits__img" width="70" height="70">
-                <use href="./images/icons.svg#icon-clock"></use>
-              </svg>
-            </a>
+            <li class="benefits__item link">
+              <a class="benefits__link benefits__link--flex" href="">
+                <svg class="benefits__img" width="70" height="70">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+              </a>
 
-            <h3 class="benefits__tagline">увага до деталей</h3>
-            <p class="benefits__features">
-              Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-            </p>
-          </li>
+              <h3 class="benefits__tagline">увага до деталей</h3>
+              <p class="benefits__features">
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+              </p>
+            </li>
 
-          <li class="benefits__item link">
-            <a class="benefits__link benefits__link--flex" href="">
-              <svg class="benefits__img" width="70" height="70">
-                <use href="./images/icons.svg#icon-diagram"></use>
-              </svg>
-            </a>
+            <li class="benefits__item link">
+              <a class="benefits__link benefits__link--flex" href="">
+                <svg class="benefits__img" width="70" height="70">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+              </a>
 
-            <h3 class="benefits__tagline">увага до деталей</h3>
-            <p class="benefits__features">
-              Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-            </p>
-          </li>
+              <h3 class="benefits__tagline">увага до деталей</h3>
+              <p class="benefits__features">
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+              </p>
+            </li>
 
-          <li class="benefits__item link">
-            <a class="benefits__link benefits__link--flex" href="">
-              <svg class="benefits__img" width="70" height="70">
-                <use href="./images/icons.svg#icon-astronaut"></use>
-              </svg>
-            </a>
+            <li class="benefits__item link">
+              <a class="benefits__link benefits__link--flex" href="">
+                <svg class="benefits__img" width="70" height="70">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </a>
 
-            <h3 class="benefits_tagline">увага до деталей</h3>
-            <p class="benefits__features">
-              Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
+              <h3 class="benefits_tagline">увага до деталей</h3>
+              <p class="benefits__features">
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <!-- ===== mission section ===== -->
+      <!-- ===== mission section ===== -->
 
-    <!-- <section class="mission-section section">
+      <!-- <section class="mission-section section">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
 
@@ -189,9 +193,9 @@
         </div>
       </section> -->
 
-    <!-- ===== team section ===== -->
+      <!-- ===== team section ===== -->
 
-    <!-- <section class="team-section section">
+      <!-- <section class="team-section section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
 
@@ -485,9 +489,9 @@
         </div>
       </section>  -->
 
-    <!-- ===== clients section ===== -->
+      <!-- ===== clients section ===== -->
 
-    <!-- <section class="clients-section section">
+      <!-- <section class="clients-section section">
         <div class="container">
           <h2 class="section-title">Постійні клієнти</h2>
 
@@ -573,17 +577,17 @@
           </ul>
         </div>
       </section> -->
-  </main>
+    </main>
 
-  <!-- ========== FOOTER ============       -->
+    <!-- ========== FOOTER ============       -->
 
-  <!-- <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer--flex container">
         <h2 class="visually-hidden">Контакти і адреса</h2> -->
 
-  <!-- === footer__logo & address === -->
+    <!-- === footer__logo & address === -->
 
-  <!-- <div class="footer__logo">
+    <!-- <div class="footer__logo">
           <a class="logo link" href="./index.html">
             <span class="logo__text-one">Web</span
             ><span class="logo__text-two logo__text-two--white">Studio</span></a
@@ -612,9 +616,9 @@
           </address>
         </div> -->
 
-  <!-- === footer soc-networks === -->
+    <!-- === footer soc-networks === -->
 
-  <!-- <div class="footer__soc-networks">
+    <!-- <div class="footer__soc-networks">
           <p class="soc-networks__title">приєднуйтесь</p>
 
           <ul class="soc-networks list">
@@ -676,9 +680,9 @@
           </ul>
         </div> -->
 
-  <!-- === subscribe === -->
+    <!-- === subscribe === -->
 
-  <!-- <div class="footer__subscribe">
+    <!-- <div class="footer__subscribe">
           <p class="subscribe__title">підпишіться на розсилку</p>
 
           <form class="form-subscribe form">
@@ -707,9 +711,9 @@
       </div>
     </footer> -->
 
-  <!-- =============== MODAL WINDOW =================== -->
+    <!-- =============== MODAL WINDOW =================== -->
 
-  <!-- <div class="backdrop is-hidden" data-modal> 
+    <!-- <div class="backdrop is-hidden" data-modal> 
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="close-button-icon" width="18" height="18">
@@ -773,116 +777,116 @@
       </div>
     </div> -->
 
-  <!-- ====== Mobile menu ===== -->
+    <!-- ====== Mobile menu ===== -->
 
-  <div class="menu-container js-menu-container" id="mobile-menu">
-    <button class="menu-toggle js-close-menu">
-      <!-- <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path> -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="" width="40" height="40">
+          <use href="./images/icons.svg#close_40px"></use>
+        </svg>
+      </button>
 
+      <!-- ===== nav ====== -->
 
-      </svg>
+      <ul class="menu-nav__list list">
+        <li class="menu-nav__item">
+          <a class="menu-nav__link link current" href="./index.html">Студія</a>
+        </li>
+        <li class="menu-nav__item">
+          <a class="menu-nav__link link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="menu-nav__item">
+          <a class="menu-nav__link link" href="">Контакти</a>
+        </li>
+      </ul>
 
-      <svg class="" width="40" height="40">
-        <use href="./images/icons.svg#menu_40px"></use>
-        <use href="./images/icons.svg#close_40px"></use>
+      <!-- ===== contact ===== -->
 
-      </svg>
+      <ul class="menu-address list">
+        <li class="menu-address__item">
+          <a class="menu-address__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+        <li class="menu-address__item">
+          <a class="menu-address__email link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
 
+      <!-- ===== socials =====  -->
 
+      <ul class="menu-socnetworks list">
+        <li class="menu-socnetworks__item">
+          <a
+            class="menu-socnetworks__link soc-networks__link--background link"
+            href=""
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            aria-label="Instagram"
+            >Instagram</a
+          >
+        </li>
 
-    </button>
+        <li>
+          <span class="menu-socnetworks__line"></span>
+        </li>
 
-    <!-- ===== nav ====== -->
+        <li class="menu-socnetworks__item">
+          <a
+            class="menu-socnetworks__link soc-networks__link--background link"
+            href=""
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            aria-label="Twitter"
+          >
+            Twitter
+          </a>
+        </li>
 
-    <ul class="menu-nav__list list">
-      <li class="menu-nav__item">
-        <a class="menu-nav__link link current" href="./index.html">Студія</a>
-      </li>
-      <li class="menu-nav__item">
-        <a class="menu-nav__link link" href="./portfolio.html">Портфоліо</a>
-      </li>
-      <li class="menu-nav__item">
-        <a class="menu-nav__link link" href="">Контакти</a>
-      </li>
-    </ul>
+        <li>
+          <span class="menu-socnetworks__line"></span>
+        </li>
 
-    <!-- ===== contact ===== -->
+        <li class="menu-socnetworks__item">
+          <a
+            class="menu-socnetworks__link soc-networks__link--background link"
+            href=""
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            aria-label="Facebook"
+          >
+            Facebook
+          </a>
+        </li>
 
-    <ul class="menu-address list">
-      <li class="menu-address__item">
-        <a class="menu-address__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
-      </li>
-      <li class="menu-address__item">
-        <a class="menu-address__email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      </li>
+        <li>
+          <span class="menu-socnetworks__line"></span>
+        </li>
 
-    </ul>
+        <li class="menu-socnetworks__item">
+          <a
+            class="menu-socnetworks__link soc-networks__link--background link"
+            href=""
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            aria-label="Linkedin"
+          >
+            Linkedin
+          </a>
+        </li>
+      </ul>
+    </div>
 
-    <!-- ===== socials =====  -->
+    <!-- ===== SCRIPTS ============= -->
 
-    <ul class="menu-socnetworks list">
-      <li class="menu-socnetworks__item">
-        <a class="menu-socnetworks__link soc-networks__link--background link" href="" target="_blank"
-          rel="nofollow noopener noreferrer" aria-label="Instagram">Instagram</a>
-      </li>
+    <script src="./js/modal.js"></script>
 
-      <li> 
-        <span class="menu-socnetworks__line"></span>
-      </li>
-
-      <li class="menu-socnetworks__item">
-        <a class="menu-socnetworks__link soc-networks__link--background link" href="" target="_blank"
-          rel="nofollow noopener noreferrer" aria-label="Twitter">
-          Twitter
-        </a>
-      </li>
-
-            <li> 
-        <span class="menu-socnetworks__line"></span>
-      </li>
-
-      <li class="menu-socnetworks__item">
-        <a class="menu-socnetworks__link soc-networks__link--background link" href="" target="_blank"
-          rel="nofollow noopener noreferrer" aria-label="Facebook">
-          Facebook
-        </a>
-      </li>
-
-            <li> 
-        <span class="menu-socnetworks__line"></span>
-      </li>
-
-      <li class="menu-socnetworks__item">
-        <a class="menu-socnetworks__link soc-networks__link--background link" href="" target="_blank"
-          rel="nofollow noopener noreferrer" aria-label="Linkedin">
-          Linkedin
-        </a>
-      </li>
-    </ul>
-
-
-
-  </div>
-
-  <!-- ===== SCRIPTS ============= -->
-
-  <script src="./js/modal.js"></script>
-
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
-  <script defer src="./js/mobile-menu.js"></script>
-</body>
-
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+  </body>
 </html>

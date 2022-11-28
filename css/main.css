@@ -650,7 +650,7 @@ body {
 
 .benefits__item {
   display: block;
-  width: 100%;
+  width: calc((100% - 90px) / 4);
 }
 
 .benefits__item:not(:nth-child(4n)) {
@@ -658,11 +658,20 @@ body {
 }
 
 .benefits__link {
-  width: 270px;
-  height: 120px;
   background-color: var(--background-section-two);
-  border-radius: 4px;
-  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .benefits__link {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__link {
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
 }
 
 .benefits__link--flex {

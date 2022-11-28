@@ -244,7 +244,7 @@ body {
   color: var(--logo-color-two);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav {
     display: none;
   }
@@ -274,14 +274,6 @@ body {
           transition-duration: var(--time-transition);
   -webkit-transition-timing-function: var(--function-transition);
           transition-timing-function: var(--function-transition);
-}
-@media screen and (max-width: 768px) {
-  .nav__link {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.175;
-    letter-spacing: 0.02em;
-  }
 }
 @media screen and (min-width: 768px) {
   .nav__link {
@@ -334,7 +326,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .contacts__list {
     display: none;
   }
@@ -1299,12 +1291,19 @@ body {
 }
 
 .menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding: 48px 40px;
   background-color: var(--background-body);
   z-index: 999;
   -webkit-transform: translateX(100%);
@@ -1338,6 +1337,34 @@ body {
   padding: 10px;
   color: #fff;
   text-decoration: none;
+}
+
+.menu-nav__list {
+  margin-bottom: auto;
+}
+
+.menu-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu-nav__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: var(--headers-text-color);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: var(--time-transition);
+          transition-duration: var(--time-transition);
+  -webkit-transition-timing-function: var(--function-transition);
+          transition-timing-function: var(--function-transition);
+}
+.menu-nav__link.current {
+  color: var(--accent-text-color);
+}
+.menu-nav__link:hover, .menu-nav__link:focus {
+  color: var(--accent-text-color);
 }
 
 .filter__list {

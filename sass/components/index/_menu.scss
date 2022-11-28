@@ -28,12 +28,15 @@
 }
 
 .menu-container {
+  display: flex;
+  flex-direction: column;
+
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding: 48px 40px;
   background-color: var(--background-body);
   z-index: 999;
 
@@ -63,4 +66,34 @@
   padding: 10px;
   color: #fff;
   text-decoration: none;
+}
+
+.menu-nav__list {
+  margin-bottom: auto;
+}
+
+.menu-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu-nav__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+
+  color: var(--headers-text-color);
+
+  transition-property: color;
+  transition-duration: var(--time-transition);
+  transition-timing-function: var(--function-transition);
+
+  &.current {
+    color: var(--accent-text-color);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
 }

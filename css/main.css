@@ -349,9 +349,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.16;
@@ -383,8 +383,6 @@ body {
 @media screen and (max-width: 1200px) {
   .contacts__icon {
     display: block;
-    width: 14px;
-    height: 10px;
   }
 }
 

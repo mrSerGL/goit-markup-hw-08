@@ -646,20 +646,22 @@ body {
   display: block;
   width: 100%;
 }
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    width: calc((100% - 90px) / 4);
+  }
+}
 
-.benefits__item:not(:nth-child(4n)) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .benefits__item:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
 }
 
 .benefits__link {
-  width: 270px;
+  display: block;
+  width: 100%;
   height: 120px;
-  background-color: var(--background-section-two);
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-
-.benefits__link--flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -669,6 +671,15 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-color: var(--background-section-two);
+}
+@media screen and (min-width: 1200px) {
+  .benefits__link {
+    width: 270px;
+    height: 120px;
+  }
 }
 
 .benefits__tagline {
@@ -683,6 +694,7 @@ body {
 .benefits__features {
   line-height: 1.71;
   color: var(--primary-text-color);
+  margin-bottom: 30px;
 }
 
 .mission-section {

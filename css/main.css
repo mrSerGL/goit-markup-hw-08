@@ -642,7 +642,6 @@ body {
 
 .benefits__item {
   display: block;
-  outline: 1px solid blue;
 }
 @media screen and (min-width: 768px) {
   .benefits__item {
@@ -707,7 +706,6 @@ body {
 .benefits__features {
   line-height: 1.71;
   color: var(--primary-text-color);
-  margin-bottom: 30px;
 }
 
 .mission-section {

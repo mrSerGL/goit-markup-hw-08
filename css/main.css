@@ -637,13 +637,22 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 30px;
   }
 }
 
 .benefits__item {
   display: block;
   outline: 1px solid blue;
+}
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits__item .benefits__item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .benefits__item {

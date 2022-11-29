@@ -3,17 +3,18 @@
 }
 
 .team {
+
+
+  @media screen and (min-width: $desktop) {
   display: flex;
   flex-wrap: wrap;
+   
+  }
 }
 
 .team__item {
+  
   display: inline-block;
-  width: calc((100% - 90px) / 4);
-
-  &:not(:nth-child(4n)) {
-    margin-right: 30px;
-  }
 
   &--border-bg-shadow {
     background-color: var(--background-section-one);
@@ -22,6 +23,33 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
+
+  // === размер блока ===
+
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+    }
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 30px) / 2);
+    }
+
+  @media screen and (min-width: $desktop) {
+  width: calc((100% - 90px) / 4);
+  }
+
+// === маржин right ===
+
+  @media screen and (min-width: $desktop) {
+    &:not(:nth-child(4n)) {
+      margin-right: 30px;
+    }
+    }
+  
+
+
+
+
 }
 
 .team__img {

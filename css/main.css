@@ -678,6 +678,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    margin-bottom: 0;
+  }
+}
+
 .benefits__link {
   display: block;
   width: 100%;

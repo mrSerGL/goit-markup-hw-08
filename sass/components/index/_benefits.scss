@@ -45,6 +45,12 @@
   }
 }
 
+.benefits__item {
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+  }
+}
+
 .benefits__link {
   display: block;
   width: 100%;

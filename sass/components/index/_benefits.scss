@@ -26,6 +26,10 @@
   }
 }
 
+.benefits__item:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 30px;
+}
+
 .benefits__item:not(:nth-child(4n)) {
   @media screen and (min-width: $desktop) {
     margin-right: 30px;

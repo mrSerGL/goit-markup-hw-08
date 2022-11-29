@@ -661,6 +661,10 @@ body {
   }
 }
 
+.benefits__item:not(:nth-last-child(-n+2)) {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 1200px) {
   .benefits__item:not(:nth-child(4n)) {
     margin-right: 30px;

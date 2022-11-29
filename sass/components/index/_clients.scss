@@ -25,9 +25,9 @@
     width: calc((100% - 60px) / 3);
   }
 
-  // @media screen and (min-width: $desktop) {
-  //   width: calc((100% - 180px) / 6);
-  // }
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .clients__item:nth-child(2n + 1) {

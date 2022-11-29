@@ -899,6 +899,11 @@ body {
     width: calc((100% - 60px) / 3);
   }
 }
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: calc((100% - 150px) / 6);
+  }
+}
 
 @media screen and (max-width: 1200px) {
   .clients__item:nth-child(2n+1) {

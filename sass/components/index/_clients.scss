@@ -15,7 +15,7 @@
 }
 
 .clients__item:not(:nth-last-child(-n + 3)) {
-  @media screen and (man-width: $tablet) {
+  @media screen and (max-width: $desktop) {
     margin-bottom: 30px;
   }
 }

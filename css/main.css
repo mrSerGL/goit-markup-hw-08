@@ -881,8 +881,16 @@ body {
           justify-content: center;
 }
 
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 768px) {
+  .clients__item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .clients__link {

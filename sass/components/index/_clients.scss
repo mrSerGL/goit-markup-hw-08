@@ -16,6 +16,12 @@
 
 // === margin right ===
 
+.clients__item:nth-child(2n + 1) {
+  @media screen and (max-width: $desktop) {
+    margin-right: 30px;
+  }
+}
+
 .clients__item:not(:last-child) {
   @media screen and (min-width: $desktop) {
     margin-right: 30px;

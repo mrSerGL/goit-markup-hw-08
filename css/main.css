@@ -887,6 +887,12 @@ body {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .clients__item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .clients__item:not(:last-child) {
     margin-right: 30px;

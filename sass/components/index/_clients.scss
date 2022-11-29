@@ -16,6 +16,20 @@
 
 // === margin right ===
 
+.clients__item {
+  @media screen and (max-width: $tablet) {
+    width: calc((100% - 60px) / 2);
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: calc((100% - 90px) / 3);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 180px) / 6);
+  }
+}
+
 .clients__item:nth-child(2n + 1) {
   @media screen and (max-width: $desktop) {
     margin-right: 30px;
@@ -31,20 +45,10 @@
 .clients__link {
   display: flex;
 
+  height: 92px;
+
   justify-content: center;
   align-items: center;
-
-  @media screen and (max-width: $tablet) {
-    width: calc((100% - 90px) / 3);
-  }
-
-  @media screen and (min-width: $desktop) {
-    width: calc((100% - 180px) / 6);
-  }
-
-  // width: 170px;
-
-  height: 92px;
 
   color: var(--fill-svg-icons);
 

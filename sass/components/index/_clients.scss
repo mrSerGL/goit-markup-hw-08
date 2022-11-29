@@ -34,7 +34,12 @@
   justify-content: center;
   align-items: center;
 
-  width: 170px;
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 180) / 6);
+  }
+
+  // width: 170px;
+
   height: 92px;
 
   color: var(--fill-svg-icons);

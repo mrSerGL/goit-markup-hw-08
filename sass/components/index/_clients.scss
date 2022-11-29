@@ -16,6 +16,20 @@
 
 // === margin right ===
 
+.clients__item:nth-child(2n + 1) {
+  @media screen and (max-width: $tablet) {
+    margin-right: 30px;
+  }
+}
+
+.clients__item:not(:nth-child(3n)) {
+  @media screen and (min-width: $tablet) {
+    margin-right: 30px;
+  }
+}
+
+// === размер блока ===
+
 .clients__item {
   @media screen and (max-width: $tablet) {
     width: calc((100% - 30px) / 2);
@@ -27,12 +41,6 @@
 
   @media screen and (min-width: $desktop) {
     width: calc((100% - 150px) / 6);
-  }
-}
-
-.clients__item:nth-child(2n + 1) {
-  @media screen and (max-width: $desktop) {
-    margin-right: 30px;
   }
 }
 

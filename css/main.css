@@ -901,6 +901,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .clients__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .clients__item {
     width: calc((100% - 30px) / 2);

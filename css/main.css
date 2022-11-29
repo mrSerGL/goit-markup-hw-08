@@ -790,6 +790,12 @@ body {
 
 .mission-section {
   padding-top: 0;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .mission-section {
+    display: block;
+  }
 }
 
 .mission {

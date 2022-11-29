@@ -14,6 +14,18 @@
   }
 }
 
+.clients__item:not(:nth-last-child(-n + 3)) {
+  @media screen and (man-width: $tablet) {
+    margin-bottom: 30px;
+  }
+}
+
+.clients__item {
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+  }
+}
+
 // === margin right ===
 
 .clients__item:nth-child(2n + 1) {

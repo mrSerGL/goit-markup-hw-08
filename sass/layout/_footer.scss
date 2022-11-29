@@ -6,10 +6,39 @@
 
 .footer--flex {
   display: flex;
-  align-items: baseline;
+  text-align: center;
+
+  @media screen and (max-width: $tablet) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
 
 /* = footer logo = */
+
+.footer-logo__link {
+  display: block;
+
+  font-family: 'Raleway', cursive;
+  font-style: normal;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+
+  text-decoration: none;
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 94px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
 
 .logo__text-two--white {
   color: var(--logo-color-three);
@@ -23,7 +52,13 @@
   font-style: normal;
   margin-top: 20px;
 
-  margin-right: 70px;
+  @media screen and (max-width: $tablet) {
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 70px;
+  }
 }
 
 .address__map {
@@ -35,27 +70,6 @@
     color: var(--accent-text-color);
   }
 }
-
-// .address__tel {
-//   @media screen and (max-width: 768px) {
-//     font-weight: 500;
-//     font-size: 34px;
-//     line-height: 1.17;
-//     letter-spacing: 0.02em;
-//     color: #2196f3;
-//   }
-// }
-
-// .address__email {
-//   @media screen and (max-width: 768px) {
-//     font-weight: 500;
-//     font-size: 24px;
-//     line-height: 28px;
-//     letter-spacing: 0.02em;
-
-//     color: #757575;
-//   }
-// }
 
 .address__email,
 .address__tel {
@@ -111,8 +125,11 @@
 /* === footer__subscribe === */
 
 .footer__subscribe {
-  margin-left: auto;
-}
+
+@media screen and (min-width: $desktop) {
+margin-left: auto;
+  }
+ }
 
 .subscribe__title {
   font-weight: 700;
@@ -125,7 +142,10 @@
 }
 
 .form-subscribe--flex {
+  @media screen and (min-width: $desktop) {
   display: flex;
+   }
+
 }
 
 .form-subscribe--position {
@@ -137,8 +157,12 @@
   display: flex;
   align-items: center;
 
-  width: 358px;
+  width: 450px;
   height: 50px;
+
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+     }
 
   font-weight: 400;
   font-size: 16px;
@@ -203,9 +227,20 @@
 
 .footer-button-subscribe {
   @extend .btn;
+  
 
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
+
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $desktop) {
+  margin: 0;
+  }
+
+  
 }

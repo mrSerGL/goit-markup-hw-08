@@ -1,3 +1,13 @@
+.clients-section-title {
+  font-size: 28px;
+  line-height: 1.18;
+
+  @media screen and (max-width: $tablet) {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
 .clients__list {
   display: flex;
   flex-wrap: wrap;

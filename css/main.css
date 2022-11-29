@@ -869,6 +869,17 @@ body {
   margin-bottom: 16px;
 }
 
+.clients-section-title {
+  font-size: 28px;
+  line-height: 1.18;
+}
+@media screen and (max-width: 768px) {
+  .clients-section-title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
 .clients__list {
   display: -webkit-box;
   display: -ms-flexbox;

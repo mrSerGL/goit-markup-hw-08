@@ -40,14 +40,14 @@
 }
 
 .benefits__item:not(:nth-last-child(-n + 2)) {
-  @media screen and (min-width: $tablet) {
+  @media screen and (max-width: $desktop) {
     margin-bottom: 30px;
   }
 }
 
 .benefits__item {
   @media screen and (min-width: $desktop) {
-    margin-bottom: 0;
+    margin-bottom: 0px;
   }
 }
 

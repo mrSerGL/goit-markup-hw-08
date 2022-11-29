@@ -672,7 +672,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1200px) {
   .benefits__item:not(:nth-last-child(-n+2)) {
     margin-bottom: 30px;
   }
@@ -680,7 +680,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .benefits__item {
-    margin-bottom: 0;
+    margin-bottom: 0px;
   }
 }
 

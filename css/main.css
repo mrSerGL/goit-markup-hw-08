@@ -826,7 +826,7 @@ body {
   background-color: var(--background-section-two);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .team {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -858,6 +858,11 @@ body {
 @media screen and (min-width: 1200px) {
   .team__item {
     width: calc((100% - 90px) / 4);
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__item:not(:nth-child(2n)) {
+    margin-right: 30px;
   }
 }
 @media screen and (min-width: 1200px) {

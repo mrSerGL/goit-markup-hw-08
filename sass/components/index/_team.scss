@@ -5,7 +5,7 @@
 .team {
 
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
   display: flex;
   flex-wrap: wrap;
    
@@ -39,6 +39,12 @@
   }
 
 // === маржин right ===
+
+@media screen and (min-width: $tablet) {
+  &:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+  }
 
   @media screen and (min-width: $desktop) {
     &:not(:nth-child(4n)) {

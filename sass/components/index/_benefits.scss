@@ -2,13 +2,18 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
   }
 }
 
 .benefits__item {
   display: block;
-  width: 100%;
-  // height: 226px;
+  outline: 1px solid blue;
+  // width: 100%;
+
+  // @media screen and (min-width: $tablet) {
+  //   width: calc((100% - 30px) / 2);
+  // }
 
   @media screen and (min-width: $desktop) {
     width: calc((100% - 90px) / 4);

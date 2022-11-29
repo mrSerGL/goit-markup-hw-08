@@ -637,12 +637,13 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    gap: 30px;
   }
 }
 
 .benefits__item {
   display: block;
-  width: 100%;
+  outline: 1px solid blue;
 }
 @media screen and (min-width: 1200px) {
   .benefits__item {

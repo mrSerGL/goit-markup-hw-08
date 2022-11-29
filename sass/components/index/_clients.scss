@@ -34,8 +34,12 @@
   justify-content: center;
   align-items: center;
 
+  @media screen and (max-width: $tablet) {
+    width: calc((100% - 90px) / 3);
+  }
+
   @media screen and (min-width: $desktop) {
-    width: calc((100% - 180) / 6);
+    width: calc((100% - 180px) / 6);
   }
 
   // width: 170px;

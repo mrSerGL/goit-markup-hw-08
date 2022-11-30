@@ -1,53 +1,106 @@
 .hero {
-  width: 1600px;
-  height: 600px;
-  background-color: var(--background-color-hero);
-  text-align: center;
-  padding: 200px 0;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+  // width: 480px;
+  // height: 400px;
+  padding-top: 118px;
 
-.hero--overlay {
-  max-width: 1600px;
-  height: 600px;
+  @media screen and (max-width: $tablet) {
+    width: 480px;
+    height: 400px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1600px;
+    height: 600px;
+
+    padding: 200px 0;
+  }
+
+  background-color: var(--background-color-hero);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  text-align: center;
+
   margin-left: auto;
   margin-right: auto;
-
-  background-image: linear-gradient(
-      to right,
-      var(--hero-gradient-color-one),
-      var(--hero-gradient-color-two)
-    ),
-    url(../images/hero.jpg);
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
+
+// .hero--overlay {
+
+//   // width: 480px;
+//   // height: 400px;
+
+//   @media screen and (max-width: $tablet) {
+//     width: 480px;
+//     height: 400px;
+//     }
+
+//   @media screen and (min-width: $tablet) {
+//     width: 768px;
+//     height: 400px;
+//     }
+
+//   @media screen and (min-width: $desktop) {
+
+//   max-width: 1600px;
+//   height: 600px;
+//   }
+
+//   margin-left: auto;
+//   margin-right: auto;
+
+//   background-image: linear-gradient(
+//       to right,
+//       var(--hero-gradient-color-one),
+//       var(--hero-gradient-color-two)
+//     ),
+//     url(../images/hero.jpg);
+
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+// }
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
 
+  text-align: center;
   text-transform: uppercase;
 
   color: #ffffff;
-  width: 696px;
-  margin: 0 auto;
 
+  margin: 0 auto;
   margin-bottom: 30px;
+
+  @media screen and (min-width: $tablet) {
+    width: 360px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 696px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
 }
 
 .hero__button {
   @extend .btn;
 
-  min-width: 216px;
-
-  letter-spacing: 0.05em;
-
-  padding: 10px 32px;
   text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    width: 216px;
+    letter-spacing: 0.05em;
+  }
 }

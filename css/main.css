@@ -739,6 +739,8 @@ body {
 
 /* Перевизначаємо шлях до 2x зображення,
     якщо щільність екрану мінімум 2 */
+/* Перевизначаємо шлях до 2x зображення,
+якщо щільність екрану мінімум 2 */
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero--overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-gradient-color-one)), to(var(--hero-gradient-color-two))), url(../images/hero/header_img_sm2x.jpg);

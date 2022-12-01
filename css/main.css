@@ -107,8 +107,6 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid green;
-  outline-offset: -2 px;
 }
 @media screen and (min-width: 768px) {
   .container {

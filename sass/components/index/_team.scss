@@ -12,6 +12,12 @@
   }
 }
 
+.team-section_title {
+  @media screen and (max-width: $desktop) {
+    font-size: 28px;
+  }
+}
+
 .team__item {
   
   display: inline-block;

@@ -61,16 +61,10 @@
     var(--hero-gradient-color-one),
     var(--hero-gradient-color-two)
   ),
-  url(../../images/hero/header_img_sm1x.jpg)
+  url(../images/hero/header_img_sm1x.jpg)
 }
 
 /* Перевизначаємо шлях до 2x зображення,
-    якщо щільність екрану мінімум 2 */
-
-    /* Перевизначаємо шлях до 2x зображення,
-    якщо щільність екрану мінімум 2 */
-
-    /* Перевизначаємо шлях до 2x зображення,
     якщо щільність екрану мінімум 2 */
 
     @media (min-device-pixel-ratio: 2),
@@ -82,7 +76,7 @@
     var(--hero-gradient-color-one),
     var(--hero-gradient-color-two)
   ),
-  url(../../images/hero/header_img_sm2x.jpg);
+  url(../images/hero/header_img_sm2x.jpg);
     }
   }
 

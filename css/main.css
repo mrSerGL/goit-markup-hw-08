@@ -411,6 +411,18 @@ body {
             align-items: center;
   }
 }
+@media screen and (min-width: 768px) {
+  .footer--flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer--flex {
     -webkit-box-orient: horizontal;
@@ -420,6 +432,7 @@ body {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    text-align: left;
   }
 }
 
@@ -432,6 +445,7 @@ body {
   font-size: 24px;
   line-height: 1.16;
   text-decoration: none;
+  margin-right: 0;
 }
 @media screen and (min-width: 1200px) {
   .footer-logo__link {
@@ -523,6 +537,9 @@ body {
 }
 
 /* === footer__subscribe === */
+.footer__subscribe {
+  display: block;
+}
 @media screen and (min-width: 1200px) {
   .footer__subscribe {
     margin-left: auto;
@@ -535,6 +552,16 @@ body {
   text-transform: uppercase;
   color: var(--footer-titles-color);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .subscribe__title {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__title {
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -680,6 +707,30 @@ body {
     width: 1600px;
     height: 600px;
     padding: 200px 0;
+  }
+}
+
+.hero--overlay {
+  width: 480px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-gradient-color-one)), to(var(--hero-gradient-color-two))), url(../images/hero.jpg);
+  background-image: linear-gradient(to right, var(--hero-gradient-color-one), var(--hero-gradient-color-two)), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .hero--overlay {
+    width: 768px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero--overlay {
+    width: 1600px;
+    height: 600px;
   }
 }
 

@@ -24,15 +24,13 @@
 
   <body>
     <!-- ===== HEADER ===== -->
-
     <header class="header">
       <div class="header--flex container">
         <a class="logo link" href="./index.html">
-          <span class="logo__text-one">Web</span><span class="logo__text-two">Studio</span></a
-        >
-
+          <span class="logo__text-one">Web</span><span class="logo__text-two">Studio</span></a>
+  
         <!-- ===== nav menu ===== -->
-
+  
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
@@ -44,27 +42,35 @@
             <li class="nav__item"><a class="nav__link link" href="">Контакти</a></li>
           </ul>
         </nav>
-
+  
         <!-- ===== header__contacts ===== -->
-
+  
         <ul class="contacts__list list">
           <li class="contacts__item link">
             <a class="contacts__link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16" height="12">
+              <svg class="contacts__icon" width="14" height="10">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
-              info@devstudio.com
+              <span>info@devstudio.com</span>
             </a>
           </li>
           <li class="contacts__item link">
             <a class="contacts__link" href="tel:+380961111111">
-              <svg class="contacts__icon" width="10" height="16">
+              <svg class="contacts__icon" width="10" height="14">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
-              +38 096 111 11 11
+              <span>+38 096 111 11 11</span>
             </a>
           </li>
         </ul>
+  
+        <!-- ===== form mobile menu OPEN button -->
+  
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="" width="40" height="40">
+            <use href="./images/icons.svg#menu_40px"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -309,15 +315,15 @@
     <footer class="footer">
       <div class="footer--flex container">
         <h2 class="visually-hidden">Контакти і адреса</h2>
-
+  
         <div class="footer__logo">
-          <a class="logo link" href="./index.html">
+          <a class="footer-logo__link link" href="./index.html">
             <span class="logo__text-one">Web</span
             ><span class="logo__text-two logo__text-two--white">Studio</span></a
           >
-
+        
           <!-- === footer__address === -->
-
+  
           <address class="footer__address">
             <ul class="list">
               <li class="address__item">
@@ -340,12 +346,12 @@
             </ul>
           </address>
         </div>
-
+  
         <!-- === footer soc-networks === -->
-
+  
         <div class="footer__soc-networks">
           <p class="soc-networks__title">приєднуйтесь</p>
-
+  
           <ul class="soc-networks list">
             <li class="soc-networks__item">
               <a
@@ -360,7 +366,7 @@
                 </svg>
               </a>
             </li>
-
+  
             <li class="soc-networks__item">
               <a
                 class="soc-networks__link soc-networks__link--background link"
@@ -374,7 +380,7 @@
                 </svg>
               </a>
             </li>
-
+  
             <li class="soc-networks__item">
               <a
                 class="soc-networks__link soc-networks__link--background link"
@@ -388,7 +394,7 @@
                 </svg>
               </a>
             </li>
-
+  
             <li class="soc-networks__item">
               <a
                 class="soc-networks__link soc-networks__link--background link"
@@ -404,12 +410,12 @@
             </li>
           </ul>
         </div>
-
+  
         <!-- === subscribe === -->
-
+  
         <div class="footer__subscribe">
           <p class="subscribe__title">підпишіться на розсилку</p>
-
+  
           <form class="form-subscribe form">
             <div class="form-subscribe--flex">
               <div class="form-subscribe--position">
@@ -423,7 +429,7 @@
                 />
                 <label class="form-subscribe__label" for="email">E-mail</label>
               </div>
-
+  
               <button type="submit" class="footer-button-subscribe">
                 <span>Підписатися</span>
                 <svg class="" width="24" height="24">
@@ -435,5 +441,92 @@
         </div>
       </div>
     </footer>
+
+      <!-- ====== Mobile menu ===== -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu"> -->
+      <button class="menu-toggle js-close-menu">
+        <svg class="" width="40" height="40">
+          <use href="./images/icons.svg#close_40px"></use>
+        </svg>
+      </button>
+  
+  
+  
+      <ul class="menu-nav__list list">
+        <li class="menu-nav__item">
+          <a class="menu-nav__link link" href="./index.html">Студія</a>
+        </li>
+        <li class="menu-nav__item">
+          <a class="menu-nav__link link current" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="menu-nav__item">
+          <a class="menu-nav__link link" href="">Контакти</a>
+        </li>
+      </ul>
+  
+  
+  
+      <ul class="menu-address list">
+        <li class="menu-address__item">
+          <a class="menu-address__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+        <li class="menu-address__item">
+          <a class="menu-address__email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+  
+  
+  
+      <ul class="menu-socnetworks list">
+        <li class="menu-socnetworks__item">
+          <a class="menu-socnetworks__link soc-networks__link--background link" href="" target="_blank"
+            rel="nofollow noopener noreferrer" aria-label="Instagram">Instagram</a>
+        </li>
+  
+        <li>
+          <span class="menu-socnetworks__line"></span>
+        </li>
+  
+        <li class="menu-socnetworks__item">
+          <a class="menu-socnetworks__link soc-networks__link--background link" href="" target="_blank"
+            rel="nofollow noopener noreferrer" aria-label="Twitter">
+            Twitter
+          </a>
+        </li>
+  
+        <li>
+          <span class="menu-socnetworks__line"></span>
+        </li>
+  
+        <li class="menu-socnetworks__item">
+          <a class="menu-socnetworks__link soc-networks__link--background link" href="" target="_blank"
+            rel="nofollow noopener noreferrer" aria-label="Facebook">
+            Facebook
+          </a>
+        </li>
+  
+        <li>
+          <span class="menu-socnetworks__line"></span>
+        </li>
+  
+        <li class="menu-socnetworks__item">
+          <a class="menu-socnetworks__link soc-networks__link--background link" href="" target="_blank"
+            rel="nofollow noopener noreferrer" aria-label="Linkedin">
+            Linkedin
+          </a>
+        </li>
+      </ul>
+    </div>
+
+      <!-- ===== SCRIPTS ============= -->
+
+  <script src="./js/modal.js"></script>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="./js/mobile-menu.js"></script>
+
   </body>
 </html>

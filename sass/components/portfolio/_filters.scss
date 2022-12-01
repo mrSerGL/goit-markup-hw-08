@@ -1,7 +1,13 @@
 .filter__list {
   margin-bottom: 50px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+
+  @media screen and (min-width: $tablet) {
+   justify-content: center;
+  } 
 }
 
 .filter__item:not(:last-of-type) {
@@ -9,20 +15,19 @@
 }
 
 .filter__button {
+
   width: auto;
   height: 38px;
 
+  padding: 6px 25px;
+
   font-weight: 500;
-
-  line-height: 1.62;
-
+  font-size: 16px;
+  line-height: calc(26 / 16);
   letter-spacing: 0.03em;
 
   color: var(--headers-text-color);
-
   background-color: #f5f4fa;
-
-  padding: 6px 22px;
 
   box-shadow: none;
 

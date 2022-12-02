@@ -58,7 +58,7 @@
       var(--hero-gradient-color-one),
       var(--hero-gradient-color-two)
     ),
-    url(./images/hero/header_img_sm@1x.jpg);
+    url(../images/hero/header_img_sm@1x.jpg);
 
     
     // mobile screen retina
@@ -69,7 +69,7 @@
         var(--hero-gradient-color-one),
         var(--hero-gradient-color-two)
       ),
-      url(./images/hero/header_img_sm@2x.jpg);
+      url(../images/hero/header_img_sm@2x.jpg);
   }
 
 
@@ -81,7 +81,7 @@
     var(--hero-gradient-color-one),
     var(--hero-gradient-color-two)
   ),
-  url(./images/hero/header_img_md@1x.jpg);
+  url(../images/hero/header_img_md@1x.jpg);
 
   
   // tablet screen retina
@@ -92,7 +92,7 @@
       var(--hero-gradient-color-one),
       var(--hero-gradient-color-two)
     ),
-    url(./images/hero/header_img_md@2x.jpg);
+    url(../images/hero/header_img_md@2x.jpg);
 }
     
   }
@@ -106,7 +106,7 @@
     var(--hero-gradient-color-one),
     var(--hero-gradient-color-two)
   ),
-  url(./images/hero/header_img_lg@1x.jpg);
+  url(../images/hero/header_img_lg@1x.jpg);
 
   
   // desktop screen retina
@@ -117,7 +117,7 @@
       var(--hero-gradient-color-one),
       var(--hero-gradient-color-two)
     ),
-    url(./images/hero/header_img_lg@2x.jpg);
+    url(../images/hero/header_img_lg@2x.jpg);
 }
     
   }

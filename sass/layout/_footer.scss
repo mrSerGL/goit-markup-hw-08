@@ -5,19 +5,24 @@
 }
 
 .footer--flex {
-  display: flex;
-  text-align: center;
+  // display: flex;
+ text-align: center;
 
+ 
   
 
   @media screen and (max-width: $tablet) {
-    flex-direction: column;
-    align-items: center;
+    
+    // flex-direction: column;
+    // align-items: center;
   }
 
   @media screen and (min-width: $tablet) {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    align-items: baseline;
     
     justify-content: space-around;
     
@@ -25,7 +30,7 @@
 
   @media screen and (min-width: $desktop) {
     flex-direction: row;
-    align-items: baseline;
+    
     text-align: left;
   }
 }
@@ -47,6 +52,8 @@
   text-decoration: none;
 
   margin-right: 0;
+
+
   
 
   @media screen and (min-width: $desktop) {
@@ -69,14 +76,31 @@
   font-style: normal;
   margin-top: 20px;
 
+
+
   @media screen and (max-width: $tablet) {
     margin-right: 0;
     margin-bottom: 60px;
+  
   }
+
   @media screen and (min-width: $desktop) {
     margin-right: 70px;
   }
 }
+
+.address__list {
+ 
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// .address_item {
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+
 
 .address__map {
   line-height: 1.71;
@@ -90,6 +114,9 @@
 
 .address__email,
 .address__tel {
+
+
+
   @media screen and (min-width: 768px) {
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
@@ -119,6 +146,19 @@
 
 .footer__soc-networks {
   width: 206px;
+  margin-bottom: 60px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: $tablet) {
+
+    margin-left: 0;
+    margin-right: 0;
+   
+    margin-bottom: 0;
+  
+  }
 }
 
 .soc-networks__title {
@@ -159,13 +199,13 @@ margin-left: auto;
  
   margin-bottom: 20px;
 
-  @media screen and (min-width: $tablet) {
-    margin-top: 60px;
-    }
+  // @media screen and (min-width: $tablet) {
+  //   margin-top: 60px;
+  //   }
 
-  @media screen and (min-width: $desktop) {
-  margin-top: 0;
-  }
+  // @media screen and (min-width: $desktop) {
+  // margin-top: 0;
+  // }
      
 }
 
@@ -185,8 +225,15 @@ margin-left: auto;
   display: flex;
   align-items: center;
 
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
+
+  // width: 450px;  03.12
   height: 50px;
+
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+     }
 
   @media screen and (min-width: $desktop) {
     width: 358px;

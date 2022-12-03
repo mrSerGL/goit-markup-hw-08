@@ -71,14 +71,16 @@
 /* = footer__address = */
 
 .footer__address {
-  width: 231px;
+  width: 100%;
 
   font-style: normal;
   margin-top: 20px;
+  margin-bottom: 60px;
 
 
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (min-width: $tablet) {
+    width: 231px;
     margin-right: 0;
     margin-bottom: 60px;
   
@@ -90,6 +92,8 @@
 }
 
 .address__list {
+width: 100%;
+ 
  
   margin-right: auto;
   margin-left: auto;

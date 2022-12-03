@@ -2,6 +2,7 @@
   // width: 480px;
   // height: 400px;
   width: 100%;
+  max-width: 1600px;
   padding-top: 118px;
 
   @media screen and (min-width: $mobile) {
@@ -32,6 +33,8 @@
 
 .hero--overlay {
   // width: 480px;   03.12
+
+  width: 100%;
   max-width: 1600px;
   height: 400px;
 

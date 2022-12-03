@@ -80,6 +80,12 @@
   color: var(--headers-text-color);
 
   margin-bottom: 10px;
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+ text-align: left;
+    }
+    
 }
 
 .benefits__features {

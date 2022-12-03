@@ -14,12 +14,17 @@
     display: flex;
     margin-left: auto;
     align-items: center;
+    
   }
 }
 
 .contacts__item:not(:last-child) {
+
+  margin-bottom: 10px;
   @media screen and (min-width: 1200px) {
     margin-right: 50px;
+    margin-bottom: 0;
+    
   }
 }
 
@@ -27,6 +32,9 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+ 
+
+
 
   font-weight: 500;
   font-size: 12px;

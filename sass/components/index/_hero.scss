@@ -1,9 +1,11 @@
 .hero {
   // width: 480px;
   // height: 400px;
+  width: 100%;
+  max-width: 1600px;
   padding-top: 118px;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (min-width: $mobile) {
     width: 480px;
     height: 400px;
   }
@@ -30,8 +32,16 @@
 }
 
 .hero--overlay {
-  width: 480px;
+  // width: 480px;   03.12
+
+  width: 100%;
+  max-width: 1600px;
   height: 400px;
+
+  @media screen and (min-width: $mobile) {
+    width: 480px;
+    height: 400px;
+  }
 
   @media screen and (min-width: $tablet) {
     width: 768px;

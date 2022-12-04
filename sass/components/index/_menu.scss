@@ -105,6 +105,8 @@
 
 .menu-socnetworks {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .menu-socnetworks__link {
@@ -134,8 +136,8 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
 
-  margin-left: 10px;
-  margin-right: 10px;
+  // margin-left: 10px;
+  // margin-right: 10px;
 }
 
 .menu-address__item:not(:last-child) {

@@ -42,7 +42,7 @@ img {
 }
 
 .container {
-  width: $mobile;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -52,6 +52,12 @@ img {
   // outline-offset: -2 px;
 
   // Breakpoints
+
+    // mobile screen
+    @media screen and (min-width: $mobile) {
+      width: $mobile;
+    }
+
   // tablet screen
   @media screen and (min-width: $tablet) {
     width: $tablet;

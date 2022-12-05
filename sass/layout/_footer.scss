@@ -39,6 +39,25 @@
 
 /* = footer logo = */
 
+.footer__logo {
+  margin-bottom: 60px;
+
+
+
+  // @media screen and (min-width: $tablet) {
+  //   // width: 231px;
+  //   margin-right: 0;
+   
+  
+  // }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 70px;
+    margin-bottom: 0;
+
+  }
+}
+
 .footer-logo__link {
   display: block;
 
@@ -57,7 +76,7 @@
   
 
   @media screen and (min-width: $desktop) {
-    margin-right: 94px;
+    // margin-right: 94px;
     padding-top: 16px;
     padding-bottom: 16px;
     
@@ -75,20 +94,22 @@
 
   font-style: normal;
   margin-top: 20px;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
 
 
 
-  @media screen and (min-width: $tablet) {
-    width: 231px;
-    margin-right: 0;
-    margin-bottom: 60px;
+  // @media screen and (min-width: $tablet) {
+  //   // width: 231px;
+  //   margin-right: 0;
+   
   
-  }
+  // }
 
-  @media screen and (min-width: $desktop) {
-    margin-right: 70px;
-  }
+  // @media screen and (min-width: $desktop) {
+  //   // margin-right: 70px;
+  //   margin-bottom: 0;
+
+  // }
 }
 
 .address__list {

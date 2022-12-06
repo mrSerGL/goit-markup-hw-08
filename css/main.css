@@ -1785,7 +1785,6 @@ body {
 .portfolio__item {
   position: relative;
   width: 100%;
-  outline: 1px solid #212121;
 }
 @media screen and (min-width: 768px) {
   .portfolio__item {
